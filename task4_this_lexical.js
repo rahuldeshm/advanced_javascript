@@ -41,3 +41,6 @@ function a(){
 
 
 a();
+/*
+lexical scope is a scope of that function and it's parant's scope
+*/

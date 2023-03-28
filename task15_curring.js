@@ -18,5 +18,6 @@ let sumation = function(x){
         console.log(x+y);
     }
 }
-let sumBytwo = sumation(2);
-sumBytwo(4);
+// let sumBytwo = sumation(2);
+// sumBytwo(4);
+sumation(7)(7);
