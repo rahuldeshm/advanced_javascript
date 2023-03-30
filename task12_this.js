@@ -31,9 +31,19 @@ cleanTable.call(office);// this inside the function acts as office.
 cleanTable.call(this);// this inside the function acts as window.
 
 //..INNER FUNCTION..//
-
+/*
+ we have three solutions to send object inside inner function 
+    => one is using that = this outside function so when we use
+    that in inner function that will point towards object 
+    saved in lexical scope.
+    => second is without using that , while calling inner function
+    I will just use call/bind method to call funnction ans this will 
+    send as argument/ Object.
+    => Third is that we can use arrow function.as in array
+    function this inside function points outside function.
+*/
 const washTable =function(soap){
-    var that = this;
+    var that = this;  //one solution 
     const innerFunction = function(soap){
         
         console.log(`Washed ${that.table} With ${soap}`);

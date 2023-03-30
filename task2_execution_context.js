@@ -1,4 +1,4 @@
-// console.log("rahul")
+console.log("task2_execution_context.js")
 /*
 How javascript works ?
 Is javascript syncronous or asynchronous ?
@@ -27,7 +27,21 @@ Code execution fase.
     now for variables it will replace undefined with its actual value in the
     code
     when we will call a function a whole new execution context will be created.
-    and whole fases will again happen.
+    and in new execution context again momery creation fase will started first
+    then code execution will be started.
+        if variables added directly like in lexical scope or in global scope if 
+        their is variable a as var a and if we created var a=60; an new variable
+        for only this execution context or scope will be created and the value 
+        of global variable a will remain same as it was.
+
+        even if we created var ans in function scope as var we con't access it
+        outside the function scope.
+        
+        if we want to access it outside function we need to initialise outside
+        and then change its value in function so we can access outside function
+        
+        but if we directly said a=60; this will change value of var a at global
+        space.
     returned value will be then given back to the global momery component 
     and stored.
     whole new execution content of function will be deleted.

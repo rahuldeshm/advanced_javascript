@@ -1,5 +1,10 @@
 //..CALL BACK..//
-
+// What is Callback function in javascript?
+/*
+    Callback functions are a function which you pass in another
+function.
+    due to callbacks we can use js as asynchronous way.
+*/
 // setTimeout(() => {
 //     console.log("timer")
 // }, (3000));
@@ -15,9 +20,6 @@
 
 //..EVENT LISTENERS..//
 
-// document.getElementById("clickMe").addEventListener('click' , function abc() {
-//     console.log('buttonclicked');
-// });
 
 //..CLOSURES WITH CALL BACK AND EVENT LISTENERS..//
 
@@ -40,5 +42,9 @@ attacheventlisteners() // closure formed inside this function maintain the
 // count value and as it is blocked function.
 //even we created another variable outside this function with same name it
 // will not change the value of count.
-
+// DOM CONTENT LOADED //
+document.addEventListener("DOMContentLoaded", functionname)
+function functionname(){
+    console.log("DOM CONTENT IS LOADED")
+}
 
