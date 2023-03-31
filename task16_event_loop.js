@@ -1,4 +1,4 @@
-// Event loop //
+console.log("// Event loop //");
 /*
 as we know while using javascript in browser if we have many components like 
 console, call stack, local storage, thread, event queues, timeout functions,
@@ -36,11 +36,11 @@ stack is known as EVENT LOOP
     starvation//
     this will work same as event queue but this queue will get priority.
     all the functions came from promices will go in microtask queue.
-    muta
+
 // Event Loop //
     moniters call stack and callback queue.
     event loop checks the callstack is empty or not.
-    if emptuy it will send first element in queue to call stack
+    if empty it will send first element in queue to call stack
     if not empty it will wait till it become empty.
 // Web API's // this is browsers things.
 => location
@@ -54,9 +54,10 @@ stack is known as EVENT LOOP
 console.log("start");// --> this will make call to console of web api.
 setTimeout(() => { // --> this also calls settimeout().
     console.log("Callback"); 
-}, 5000);
+}, 1000);
 fetch("https://api.netflix.com")
-    .then(() => console.log("cb netflix"))
+    .then(() => console.log("cb netflix")) //this will run after promise get resolved
+    .catch(()=> console.log("error occured"))
 console.log("End")
 
 // FETCH // goes and request api call.

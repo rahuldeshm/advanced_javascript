@@ -3,10 +3,13 @@ console.log("task5_let_const_var.js");
 // console.log(this.g)//this will also give undefined
 // console.log(g);//error as connot access g before initialisation
 let g = 77;
+// {
+//     let g=99;
+//     console.log(g)//will work fine and give value 99
+// }
 // console.log(window.g)//this will give undefined
 // console.log(this.g)//this will also give undefined
-// console.log(g);//will work fine
-// cannot give access to a before initialisation
+// console.log(g);//will work fine and give value 77
 console.log(b); 
 // works fine and gives value undefined
 //TEMPORAL DEAD ZONE//
@@ -17,8 +20,9 @@ var veriables.
 =>let variables are not stored in global object they are 
 stored at different memory location.
 =>if a let variable is decleared then we can't decleare 
-again in code using let or var.
-=>but we can declear it in another scope or in function.
+again in same space using let or var const.
+=>but we can declear it in another scope or in function or 
+closure.
 =>if decleared let variable again it will give syntex error 
 and no line of code is exicuted
 =>in case of var variable we can declare a variable twice
@@ -52,7 +56,9 @@ console.log(b)
 // console.log(d)//cannot access 'd' as it in not in global 
 // scope
 const c=199;
-// c=288;//can't do that need let var or const in front of it
+// c=288;//can't do that in anywhere.
+// if we want c in another closure or in another function can 
+// do but need to add let or const in front of it.
 console.log(c)
 // EXAMPLE //
 let ab = 5;

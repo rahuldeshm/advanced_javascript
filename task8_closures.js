@@ -1,7 +1,7 @@
 console.log("task8_closures.js")
 // CLOSURES //
 // Function along with it's lexical scope bundle together forms closure
-// ...may be it is just a function with its previous first lexical scope
+// ...may be it is just a function with its previous lexical scope
 // block.
 function x(){ 
     var a = 19;
@@ -14,6 +14,9 @@ function x(){
         }
         return z
     }
+    function adx(){//function will not come in closure.only variables will come.
+        console.log("inside adx")
+    }
     return y;
 }
 const d = x();  // as we know function x is gone from call stack afer execution
@@ -21,6 +24,7 @@ const e = d(); // so same with y function after return z function
 const f = e(); //still z function is able to access its lexical scope this is due to CLOSURES
 console.log(f);
 // When we return function we not only return function but we return 
+// Closure
 // it's lexical scope of the function along with function.
 
 // console.log(x()()());

@@ -1,3 +1,4 @@
+console.log("task6_foreach_map_objectiteration.js")
 // OBJECT ITERATION //
 
 // var obj = {
@@ -13,13 +14,13 @@
 // console.log(obj2 == obj) //return false 
 // /*
 //     When we are compairing objects in javascript, if both are pointing
-// towards same obj then only it will say same otherwise it will show 
+// towards same obj then only it will say true otherwise it will show 
 // false 
 //     If we check it for string or number it will check value.
 // */
 // var a =7
 // var b=7
-// console.log(a==b); // Give true as it is number
+// console.log(a==b); // Give true as it is equal number at different space.
 // console.log(obj2)
 // console.log(obj)
 
@@ -61,7 +62,8 @@ console.log(ar.map(item))
 // Map will store returned valued in array and if we console.log it will
 // print that array
 
-let newArray = [1,2,3,4,5,6,7,8,9].map(doubleeven)
+let nArray = [1,2,3,4,5,6,7,8,9].map(doubleeven)
+console.log(nArray.map(doubleeven));
 function doubleeven(element,index,arr){
     if (element%2 ===0){
         return element*2
@@ -69,4 +71,4 @@ function doubleeven(element,index,arr){
         return element
     }
 }
-console.log(newArray)
+console.log(nArray)

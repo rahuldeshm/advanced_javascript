@@ -1,3 +1,4 @@
+console.log("task7_blockscope_showding.js");
 // BLOCK SCOPED //
 /* 
 What is block scoped?
@@ -10,7 +11,7 @@ const a = 10;// will create in script scope
 var b = 60; // will create in global scope
 let d=50;// will create in script scope.
 {
-    // console.log(b)//for var it gives previous value/let ans const temporal dead zone
+    // console.log(b)//for var it gives previous value/let ans const temporal dead zone if decleared below
     // console.log(d)//temporal dead zone if decleread
     // this is in script block parallel to global scope.
     // var a=1;//error identifier a is already declered. illigal shadowing
@@ -23,7 +24,7 @@ let d=50;// will create in script scope.
     // let d = 00; //this will work. is known as shadowing.
     // const d= 08;// this will work .shadowed.
     console.log(a)
-    console.log(b)
+    console.log(b)// if not present inside block gives value of global scope.
     console.log(d)// gives value of block scoped b 
 }
 function ab(){
@@ -44,8 +45,8 @@ function ab(){
 
 }
 ab()
-console.log(a)// works fine
-console.log(b);
+console.log(a)// works fine if not in global space gives value of block space 
+console.log(b);// if not in global space it will give error same with const
 /*
 give value of b at global scope
     if var value only present at global

@@ -1,3 +1,4 @@
+console.log("task12_this.js")
 //..PUBLIC..//
 
 this.table = 'window table ';//can directly create var table="something and gives same result"

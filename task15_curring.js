@@ -1,3 +1,4 @@
+console.log("task15_curring.js");
 //..BIND..//
 
 let multiply = function(x,y){
@@ -18,6 +19,6 @@ let sumation = function(x){
         console.log(x+y);
     }
 }
-// let sumBytwo = sumation(2);
-// sumBytwo(4);
+let sumBytwo = sumation(2);
+sumBytwo(4);
 sumation(7)(7);

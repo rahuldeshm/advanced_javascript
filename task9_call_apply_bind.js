@@ -1,4 +1,4 @@
-// console.log("task9_call_apply_bind.js");
+console.log("task9_call_apply_bind.js");
 // //CALL APPLY AND BIND//
 // //..CALL..//
 // var a = {

@@ -1,5 +1,6 @@
 console.log("task2_execution_context.js")
 /*
+What is javascript? => js is scripting language.
 How javascript works ?
 Is javascript syncronous or asynchronous ?
 Is javascript single threaded or multithreaded ?
@@ -34,13 +35,15 @@ Code execution fase.
         for only this execution context or scope will be created and the value 
         of global variable a will remain same as it was.
 
+        but for closure new var will change value of global var.
+
         even if we created var ans in function scope as var we con't access it
         outside the function scope.
         
         if we want to access it outside function we need to initialise outside
         and then change its value in function so we can access outside function
         
-        but if we directly said a=60; this will change value of var a at global
+        if we directly said a=60; this will change value of var a at global
         space.
     returned value will be then given back to the global momery component 
     and stored.
@@ -51,5 +54,6 @@ Runtime stack / Machine Stack
     at bottom global execution context is at bottom of call stack.
     if another execution context is created it will be pushed in call stack.
     and after execution it will be deleted from call stack
+    and after execution of all the code global scope is also deleted.
 
 */

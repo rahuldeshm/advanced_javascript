@@ -13,15 +13,15 @@ in browser this global context is known as window object
 // var c = 2;
 function b(){
     var x = 2;
-    a()
+    a() // can access function a as a is in lexical scope of b
     var c = 4
     console.log(c)
 }
 
-console.log(a);// This will print 2 as a is 2 in global space
-console.log(this.a);//same output '2'
-console.log(this.c)// same output '2'
-console.log(this.x)
+// console.log(a);// This will print 2 as a is 2 in global space
+// console.log(this.a);//same output '2'
+// console.log(this.c)// same output '2'
+// console.log(this.x)
 /*
 his will not show error as this is difined and x is not defined so it 
 will give output ans undefined
@@ -32,7 +32,8 @@ but we try to access only x => will show error as x is not defined.
 // console.log(window.a) // this will print '2' in console
 // console.log(window.x)//this will also give undefined as windows is defined 
 console.log(b());
-/*this will invoke the function b prints 4 as it is console.log(c) inside 
+/*this will invoke the function b ans inside function it will invoke function a 
+and prints 10 then prints 4 as it is console.log(c) inside 
 scope of b but it will return nothing and this will give us value undefined
 as b() so this value then console.log() so it will give undefined.
 */

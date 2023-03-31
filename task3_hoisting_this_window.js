@@ -1,7 +1,9 @@
 console.log("task3_hoistiog_this_window.js")
 //what is hoisting?
-//  hoisting is a phenomina in javascript by which we can access variable and 
-//functions even Before initilizating it
+/*
+    hoisting is a phenomina in javascript by which we can access variable and 
+functions even Before initilizating it
+*/
 getCoarse();
 // this will run all code in function if function is defined earler or later.
 console.log(x);  //this give value of x undefined if x is defined below.
@@ -43,5 +45,5 @@ console.log(this.getCoarse)
 console.log(printName);//this will give us undefined
 console.log(printName());//this will give us error that printName is not function.
 var printName = (name) => {
-console.log(name)//this will give nothing till we call printName().
+console.log(name)//this will give nothing till we call printName() after defining variable.
 }

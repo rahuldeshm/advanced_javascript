@@ -44,7 +44,7 @@ var ab = function (){
 var aaa = function asf(){
     console.log("Named functions")
     // we can call asf name inside only not outside
-    // we can access inside by "asg" name.
+    // we can access inside by "asf" name.
 }
 // asf() // this will give error 
 

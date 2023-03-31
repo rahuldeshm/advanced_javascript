@@ -1,3 +1,4 @@
+console.log("task14_fat_arrow.js");
 "use strict";
 var student = function(name){
     const that =this;
